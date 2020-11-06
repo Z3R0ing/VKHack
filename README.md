@@ -1,34 +1,47 @@
 [<img width="134" src="https://vk.com/images/apps/mini_apps/vk_mini_apps_logo.svg">](https://vk.com/services)
 
-# Create VK Mini App [![npm][npm]][npm-url] [![deps][deps]][deps-url]
+# StudORG
 
-## How to install
+## Как скачать?
 
-### Create VK Mini App with gh-pages deploy
+1. Клонируй репозиторий
 
-`npx @vkontakte/create-vk-mini-app <app-directory-name>`
+   `gh repo clone Z3R0ing/VKHack`
 
-### Create VK Mini App with Zeit deploy
+2. Открой в VS Code
 
-Firstly, you have to create Zeit account and connect it with your GitHub profile — https://zeit.co/
+3. Открой терминал проекта
 
-`npx @vkontakte/create-vk-mini-app <app-directory-name> --zeit`
+4. Установи всё необходимое
 
-### Create VK Mini App with Surge deploy
+   `npx @vkontakte/create-vk-mini-app {directory name}`
 
-Firstly, you have to create Surge account and Surge-domain — https://surge.sh/
+## Как запустить?
 
-`npx @vkontakte/create-vk-mini-app <app-directory-name> --surge <surge-domain>`
+0. Установи vk-tunnel при !первом! запуске
 
-## How to start work with app
+   `npm install @vkontakte/vk-tunnel -g`
 
-Go to created folder and run:
-`yarn start` || `npm start` — this will start dev server with hot reload on `localhost:10888`.
+1. Запусти проект
 
-`yarn run build` || `npm run build` — this will build production bundle, with tree-shaking, uglify and all this modern fancy stuff
+   `npm start`
 
-[npm]: https://img.shields.io/npm/v/@vkontakte/create-vk-mini-app.svg
-[npm-url]: https://npmjs.com/package/@vkontakte/create-vk-mini-app
+2. Открой вторую консоль проекта
 
-[deps]: https://img.shields.io/david/vkcom/create-vk-mini-app.svg
-[deps-url]: https://david-dm.org/vkcom/create-vk-mini-app
+3. Пропиши
+
+   `vk-tunnel --insecure=1 --http-protocol=https --ws-protocol=wss --host=localhost --port=10888`
+
+4. В терминале будет предложено перейти по адресу в формате
+`https://oauth.vk.com/code_auth?stage=check&code=2a2aaaa` 
+для авторизации
+
+5. Открой ссылку в браузере, вернись в терминал и нажми enter
+
+6. После успешной авторизации в терминале появится ссылка вида:
+
+   `https://user12345-jv7zlzzz.wormhole.vk-apps.com`
+
+7. Вставь её в настройках приложения
+
+8. Открой приложение, чтобы проверить
