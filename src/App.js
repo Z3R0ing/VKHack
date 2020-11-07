@@ -6,7 +6,15 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
 import Persik from './panels/Persik';
+<<<<<<< Updated upstream
 import Panel_list2 from './panels/Panel_list2';
+=======
+<<<<<<< HEAD
+import Main from './panels/Main';
+=======
+import Panel_list2 from './panels/Panel_list2';
+>>>>>>> 0bd1412426ef9a81fd99238c6e1d6f66a6f43065
+>>>>>>> Stashed changes
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('panel2');
@@ -38,6 +46,7 @@ const App = () => {
 			<Panel_list2 id= 'panel2' go={go}/>
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
 			<Persik id='persik' go={go} />
+			<Main id='main' go={go}/>
 		</View>
 	);
 }
