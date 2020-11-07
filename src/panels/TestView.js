@@ -6,21 +6,24 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
-const TestView = ({ id }) => (
-    <View id = { id } activePanel='test1'>
-	<Panel id="test1">
+import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
+import Input from 'react';
+import FormLayoutGroup from 'react';
+
+const TestView = ({ id, go }) => (
+<Panel id={ id }>
 		<PanelHeader>Example</PanelHeader>
         <Div>
             <Button>
 				Кнопка
 			</Button>
         </Div>
-	</Panel>
-    </View>
+    </Panel>
 );
 
 TestView.propTypes = {
-    id: PropTypes.string.isRequired
+    id: PropTypes.string.isRequired,
+    go: PropTypes.func.isRequired,
 };
 
 export default TestView;
