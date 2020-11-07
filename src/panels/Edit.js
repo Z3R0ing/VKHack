@@ -5,7 +5,7 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
 import Input from '@vkontakte/vkui/dist/components/Input/Input';
 import FormLayoutGroup from '@vkontakte/vkui/dist/components/FormLayoutGroup/FormLayoutGroup';
-import { Card, CardGrid, Checkbox, File, FormLayout, Group, Header, Textarea } from '@vkontakte/vkui';
+import { Button, Card, CardGrid, Checkbox, Div, File, FormLayout, Group, Header, Textarea } from '@vkontakte/vkui';
 import { Select } from '@vkontakte/vkui';
 import { Icon24Document } from '@vkontakte/icons';
 
@@ -56,9 +56,21 @@ const Edit = ({ id , go }) => (
 	  <FormLayout>
 	  <Input placeholder="Преподаватель" />
 	  <Input placeholder="Сроки сдачи" />
+	  </FormLayout>	 
 
-	  </FormLayout>
-	  
+	  <span>
+	  <FormLayout>
+		 	<Button mode="commerce">Commerce</Button>
+		</FormLayout>
+
+		<FormLayout>
+			<Button mode="destructive">Destructive</Button>
+		</FormLayout>
+
+	  </span>
+	 	
+     <Div>
+     </Div>
 	</Panel>
 );
 
