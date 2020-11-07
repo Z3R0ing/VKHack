@@ -6,10 +6,6 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
-import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
-import Input from 'react';
-import FormLayoutGroup from 'react';
-
 const TestView = ({ id, go }) => (
 <Panel id={ id }>
 		<PanelHeader>Example</PanelHeader>
