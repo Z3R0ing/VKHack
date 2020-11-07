@@ -7,7 +7,8 @@ import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
 const TestView = ({ id, go }) => (
-    <Panel id={ id }>
+<View id={ id } activePanel = 'testPanel'>
+    <Panel id='testPanel'>
 		<PanelHeader>Example</PanelHeader>
         <Div>
             <Button onClick={ go } data-to='mainView'>
@@ -35,6 +36,7 @@ const TestView = ({ id, go }) => (
 			</Button>
         </Div>
     </Panel>
+</View>
 );
 
 TestView.propTypes = {

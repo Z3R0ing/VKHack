@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
+import { View, Button, CardGrid, Checkbox, Div, FormLayout } from '@vkontakte/vkui';
 import { Button, CardGrid, Checkbox, Div, FormLayout } from '@vkontakte/vkui';
 import DatePicker from 'react-date-picker';
 import Calendar from 'react-calendar';
@@ -17,7 +18,8 @@ const MainView = ({ id , go }) => {
 		}
 
 		return(
-			<Panel id={id}>
+			<View id={ id } activePanel = 'mainPanel'>
+	<Panel id='mainPanel'>
 			<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 				StudORG
 			</PanelHeader>
@@ -56,6 +58,7 @@ const MainView = ({ id , go }) => {
 			</Accordion>
 
 			</Panel>
+			</View>
 		);
 	
 };
