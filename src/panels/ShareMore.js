@@ -14,12 +14,15 @@ import { Header } from '@vkontakte/vkui';
 import { Cell } from '@vkontakte/vkui';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import { getAvatarUrl } from '@vkontakte/vk-bridge';
+import {Select} from '@vkontakte/vkui';
+import {Textarea} from '@vkontakte/vkui';
 
 const ShareMore = ({ id , go }) => (
 	<Panel id={id}>
 		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 			Подробнее
 		</PanelHeader>
+
 		<Group description="Дефолтный стиль аватарки. Используется для юзеров, групп.">
        		<Header mode="secondary">Дефолтный тип</Header>
         	<Cell before={<Avatar src={getAvatarUrl("https://sun4-15.userapi.com/impg/gKisXVJfnqW7cNq-8gBMtFo2Ky8any2hsm_NUw/D0lc-NsYlsI.jpg")} />}>Евгений Авсиевич</Cell>
@@ -27,8 +30,20 @@ const ShareMore = ({ id , go }) => (
 
 		<FormLayoutGroup top="Подробности">
             
-              <Input placeholder="Тип задания" />
+			<Select
+              	top="Тип задания"
+              	placeholder="Выберите тип задания"
+              	status={'Тут нужно написать purpose' ? 'valid' : 'error'}
+              	bottom={'Тут нужно написать purpose' ? '' : 'Пожалуйста, укажите тип задания'}
+              
+              	value={'Тут нужно написать purpose'}
+              	name="purpose"
+            >
+			  </Select>
 			  <Input placeholder="Сроки сдачи" />
+			  <FormLayout>
+        		<Textarea top="Заметки" placeholder="Группы, исполнители, продюссеры" />
+      		  </FormLayout>
 			  <Input placeholder="Преподаватель" />
         </FormLayoutGroup>
 		<FormLayout>
