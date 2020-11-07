@@ -9,7 +9,7 @@ import DatePicker from 'react-date-picker';
 import Calendar from 'react-calendar';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Accordion} from 'react-bootstrap';
-import {Card, Header, PanelHeaderBack} from '@vkontakte/vkui';
+import {Card, Header, PanelHeaderBack, Cell} from '@vkontakte/vkui';
 
 const MainView = ({ id , go }) => {
 
@@ -38,22 +38,22 @@ const MainView = ({ id , go }) => {
         					<Checkbox>Подзадача 2</Checkbox>
         					<Checkbox>Подзадача 3</Checkbox>
         					<Checkbox>Подзадача 4</Checkbox>
+							<Cell>Cрок: 18.11</Cell>
       					</FormLayout>
     				</Accordion.Collapse>
   				</Card>
 				  </Div>
 			<Div>
 				  <Card>
-		<Accordion.Toggle as={Header} eventKey="1">Программирование</Accordion.Toggle>
+				  <Accordion.Toggle as={Header} eventKey="1">Программирование</Accordion.Toggle>
     				<Accordion.Collapse eventKey="1">
-						
 						<FormLayout>
         					<Checkbox>Подзадача 1</Checkbox>
         					<Checkbox>Подзадача 2</Checkbox>
         					<Checkbox>Подзадача 3</Checkbox>
         					<Checkbox>Подзадача 4</Checkbox>
+							<Cell>Cрок: 18.11</Cell>
       					</FormLayout>
-        			
     				</Accordion.Collapse>
   				</Card>
 			</Div>
