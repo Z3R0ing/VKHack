@@ -22,7 +22,8 @@ const ShareMore = ({ id , go }) => (
 		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 			Подробнее
 		</PanelHeader>
-		<Input placeholder="Название" />
+		<FormLayout><Input top="Название" placeholder="" /></FormLayout>
+		
 
 		<Group description="">
        		<Header mode="secondary">Отправитель</Header>
@@ -30,8 +31,9 @@ const ShareMore = ({ id , go }) => (
       	</Group>
 
 		<FormLayoutGroup top="Подробности">
-            
-			<Select
+			<FormLayout>
+				<Select
+			
               	top="Тип задания"
               	placeholder="Выберите тип задания"
               	status={'Тут нужно написать purpose' ? 'valid' : 'error'}
@@ -41,15 +43,23 @@ const ShareMore = ({ id , go }) => (
               	name="purpose"
             >
 			  </Select>
-			  <Input placeholder="Сроки сдачи" />
+			  </FormLayout>
+
 			  <FormLayout>
-        		<Textarea top="Заметки" placeholder="" />
-      		  </FormLayout>
-			  <Input placeholder="Преподаватель" />
+			  <Input top="Сроки сдачи" placeholder="" />	  
+			  </FormLayout>
+
+			  <FormLayout>
+				  <Input top="Преподаватель"placeholder="" />
+			  </FormLayout>
+			  <FormLayout>
+			  	<Textarea top="Заметки" placeholder="" />
+			  </FormLayout>
+
+			  <FormLayout>
+			  <File top="Прикреплённые документы" before={<Icon24Document />} controlSize="xl" mode="secondary" />
+			  </FormLayout>
         </FormLayoutGroup>
-		<FormLayout>
-        <File top="Прикреплённые документы" before={<Icon24Document />} controlSize="xl" mode="secondary" />
-      </FormLayout>
 	</Panel>
 );
 
