@@ -7,29 +7,24 @@ import MoreInfo from './panels/MoreInfo';
 import Share from './panels/Share';
 import ShareMore from './panels/ShareMore';
 import '@vkontakte/vkui/dist/vkui.css';
-import { Panel } from '@vkontakte/vkui';
+import { Root } from '@vkontakte/vkui';
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('test');
+	const [activeView, setActiveView] = useState('test');
 
 	const go = e => {
-		setActivePanel(e.currentTarget.dataset.to);
+		setActiveView(e.currentTarget.dataset.to);
 	};
 
 	return (
-		
-			<View activePanel={activePanel}>
-				
-					<TestView id = 'test' go = { go }/>
-					<MainView id = 'mainView' go = { go }/>
-					<Edit id = 'edit' go = { go }/>
-					<MoreInfo id = 'moreInfo' go = { go }/>
-					<Share id = 'share' go = { go }/>
-					<ShareMore id = 'shareMore' go = { go }/>
-
-				
-			</View>
-		
+		<Root activeView={activeView}>
+			<TestView id = 'test' go = {go}/>
+			<MainView id = 'mainView' go = {go}/>
+			<Edit id = 'edit' go = {go}/>
+			<MoreInfo id = 'moreInfo' go = {go}/>
+			<Share id = 'share' go = {go}/>
+			<ShareMore id = 'shareMore' go = {go}/>
+		</Root>
 	);
 }
 

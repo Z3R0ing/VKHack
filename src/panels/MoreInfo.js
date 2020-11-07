@@ -10,9 +10,11 @@ import { FormLayout } from '@vkontakte/vkui';
 import { Checkbox } from '@vkontakte/vkui';
 import { Link } from '@vkontakte/vkui';
 import { Header } from '@vkontakte/vkui';
+import { View } from '@vkontakte/vkui';
 
 const MoreInfo = ({ id , go }) => (
-	<Panel id={id}>
+<View id={id} activePanel='infoPanel'>
+	<Panel id='infoPanel'>
 		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 			Программирование
 		</PanelHeader>
@@ -57,6 +59,7 @@ const MoreInfo = ({ id , go }) => (
         </Cell>
       </Group>
 	</Panel>
+</View>
 );
 
 MoreInfo.propTypes = {

@@ -16,9 +16,11 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import { getAvatarUrl } from '@vkontakte/vk-bridge';
 import {Select} from '@vkontakte/vkui';
 import {Textarea} from '@vkontakte/vkui';
+import {View} from '@vkontakte/vkui';
 
 const ShareMore = ({ id , go }) => (
-	<Panel id={id}>
+<View id = {id} activePanel = 'shareInfo'>
+	<Panel id='shareInfo'>
 		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 			Подробнее
 		</PanelHeader>
@@ -61,6 +63,7 @@ const ShareMore = ({ id , go }) => (
 			  </FormLayout>
         </FormLayoutGroup>
 	</Panel>
+</View>
 );
 
 ShareMore.propTypes = {

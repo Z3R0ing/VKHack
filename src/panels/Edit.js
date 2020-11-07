@@ -8,11 +8,12 @@ import FormLayoutGroup from '@vkontakte/vkui/dist/components/FormLayoutGroup/For
 import { Card, CardGrid, Checkbox, File, FormLayout, Group, Header, Textarea } from '@vkontakte/vkui';
 import { Select } from '@vkontakte/vkui';
 import { Icon24Document } from '@vkontakte/icons';
+import View from '@vkontakte/vkui/dist/components/View/View';
 
   
 const Edit = ({ id , go }) => (
-	
-	<Panel id={id}>
+<View id={id} activePanel='viewPanel'>
+	<Panel id='viewPanel'>
 		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 			Edit Frame
 		</PanelHeader>
@@ -60,6 +61,7 @@ const Edit = ({ id , go }) => (
 	  </FormLayout>
 	  
 	</Panel>
+</View>
 );
 
 Edit.propTypes = {
