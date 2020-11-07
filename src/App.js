@@ -11,7 +11,7 @@ import Main from './panels/Main';
 import Panel_list2 from './panels/Panel_list2';
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('panel2');
+	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
 
