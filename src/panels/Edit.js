@@ -9,12 +9,15 @@ import { Button, Card, CardGrid, Checkbox, Div, File, FormLayout, Group, Header,
 import { Select } from '@vkontakte/vkui';
 import { Icon24Document } from '@vkontakte/icons';
 import View from '@vkontakte/vkui/dist/components/View/View';
+import{PanelHeaderBack} from '@vkontakte/vkui';
+
+
 
   
 const Edit = ({ id , go }) => (
 <View id={id} activePanel='viewPanel'>
 	<Panel id='viewPanel'>
-		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
+	<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}>
 			Edit Frame
 		</PanelHeader>
         <FormLayoutGroup top="Экран редактирования">
@@ -42,6 +45,7 @@ const Edit = ({ id , go }) => (
         <CardGrid>
           <Card size="l" mode="outline">
 			<FormLayout>
+				
         		<Checkbox>Подзадача 1</Checkbox>
         		<Checkbox>Подзадача 2</Checkbox>
         		<Checkbox>Подзадача 3</Checkbox>
@@ -50,6 +54,9 @@ const Edit = ({ id , go }) => (
           </Card>
         </CardGrid>
       </Group>
+		function AddCheckbox(){
+			<Checkbox>Подзадача </Checkbox>
+		}
 
       <FormLayout>
         <File top="Загрузите документы" before={<Icon24Document />} controlSize="xl" mode="secondary" />

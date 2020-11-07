@@ -11,11 +11,11 @@ import { Checkbox } from '@vkontakte/vkui';
 import { Link } from '@vkontakte/vkui';
 import { Header } from '@vkontakte/vkui';
 import { View } from '@vkontakte/vkui';
-
+import{PanelHeaderBack} from '@vkontakte/vkui';
 const MoreInfo = ({ id , go }) => (
 <View id={id} activePanel='infoPanel'>
 	<Panel id='infoPanel'>
-		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
+  <PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}>
 			Программирование
 		</PanelHeader>
       <Group>
