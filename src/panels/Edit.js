@@ -65,19 +65,15 @@ const Edit = ({ id , go }) => (
 	  <Input placeholder="Преподаватель" />
 	  <Input placeholder="Сроки сдачи" />
 	  </FormLayout>	 
-	  <span>
+	  
 	  <FormLayout>
-		 	<Button mode="commerce">Commerce</Button>
+			
+		<Div> 
+		<Button mode="commerce">Commerce</Button>
+		<Button mode="destructive">Destructive</Button>
+
+		</Div>
 		</FormLayout>
-		<FormLayout>
-			<Button mode="destructive">Destructive</Button>
-		</FormLayout>
-	  </span>
-		<FormLayout>
-			<Button mode="destructive">Destructive</Button>
-		</FormLayout>
-     <Div>
-     </Div>
 	</Panel>
 </View>
 );

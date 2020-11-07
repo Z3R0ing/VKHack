@@ -4,8 +4,6 @@ import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
 import { View, CardGrid, Checkbox, Div, FormLayout } from '@vkontakte/vkui';
-import { Button} from '@vkontakte/vkui';
-import DatePicker from 'react-date-picker';
 import Calendar from 'react-calendar';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Accordion, Card} from 'react-bootstrap';
