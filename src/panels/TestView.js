@@ -10,8 +10,8 @@ const TestView = ({ id, go }) => (
 <Panel id={ id }>
 		<PanelHeader>Example</PanelHeader>
         <Div>
-            <Button>
-				Кнопка
+            <Button onClick={ go } data-to='edit'>
+				Edit screen
 			</Button>
         </Div>
     </Panel>
