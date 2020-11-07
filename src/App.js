@@ -7,6 +7,7 @@ import MoreInfo from './view/MoreInfo';
 import Share from './view/Share';
 import ShareMore from './view/ShareMore';*/
 import '@vkontakte/vkui/dist/vkui.css';
+import { Panel } from '@vkontakte/vkui';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('edit');
@@ -16,10 +17,14 @@ const App = () => {
 	};
 
 	return (
-		<View activePanel={activePanel}>
-			<TestView id = 'test' go = { go }/>
-			<Edit id = 'edit' go = { go }/>
-		</View>
+		
+			<View activePanel={activePanel}>
+				
+					<TestView id = 'test' go = { go }/>
+					<Edit id = 'edit' go = { go }/>
+				
+			</View>
+		
 	);
 }
 

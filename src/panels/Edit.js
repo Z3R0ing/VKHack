@@ -8,9 +8,7 @@ import FormLayoutGroup from '@vkontakte/vkui/dist/components/FormLayoutGroup/For
 
 const Edit = ({ id , go }) => (
 	<Panel id={id}>
-		<PanelHeader
-		left={<PanelHeaderButton onClick={ go } data-on='test'>Назад</PanelHeaderButton>}
-		>
+		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 			Edit Frame
 		</PanelHeader>
         <FormLayoutGroup top="Работа">
