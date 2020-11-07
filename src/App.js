@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import bridge from '@vkontakte/vk-bridge';
-import View from '@vkontakte/vkui/dist/components/View/View';
 import ScreenSpinner from '@vkontakte/vkui/dist/components/ScreenSpinner/ScreenSpinner';
 import '@vkontakte/vkui/dist/vkui.css';
 
-import Home from './panels/Home';
-import Persik from './panels/Persik';
-
-import Main from './panels/Main';
-import Panel_list2 from './panels/Panel_list2';
+import TestView from './view/TestView';
+import Main from './view/Main';
+import Edit from './view/Edit';
+import MoreInfo from './view/MoreInfo';
+import Share from './view/Share';
+import ShareMore from './view/ShareMore';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -36,12 +36,14 @@ const App = () => {
 	};
 
 	return (
-		<View activePanel={activePanel} popout={popout}>
-			<Panel_list2 id= 'panel2' go={go}/>
-			<Home id='home' fetchedUser={fetchedUser} go={go} />
-			<Persik id='persik' go={go} />
+		<Root activeView={this.state.activeView}>
+			<TestView id='test' go={go}/>
 			<Main id='main' go={go}/>
-		</View>
+			<Edit id='edit' go={go}/>
+			<MoreInfo id='moreInfo' go={go}/>
+			<Share id='share' go={go}/>
+			<ShareMore id='shareMore' go={go}/>
+</Root>
 	);
 }
 
