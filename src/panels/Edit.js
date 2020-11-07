@@ -54,9 +54,6 @@ const Edit = ({ id , go }) => (
           </Card>
         </CardGrid>
       </Group>
-		function AddCheckbox(){
-			<Checkbox>Подзадача </Checkbox>
-		}
 
       <FormLayout>
         <File top="Загрузите документы" before={<Icon24Document />} controlSize="xl" mode="secondary" />
