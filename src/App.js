@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import Root from '@vkontakte/vkui/dist/components/Root/Root';
-import TestView from './view/TestView';
-import MoreInfo from './view/MoreInfo';
+import View from '@vkontakte/vkui/dist/components/View/View';
+import TestView from './panels/TestView';
+import Edit from './panels/Edit';
 /*import MainView from './view/MainView';
-import Edit from './view/Edit';
+import MoreInfo from './view/MoreInfo';
 import Share from './view/Share';
 import ShareMore from './view/ShareMore';*/
 import '@vkontakte/vkui/dist/vkui.css';
 
 const App = () => {
-	const [activeView] = useState('test');
+	const [activePanel, setActivePanel] = useState('edit');
+
+	const go = e => {
+		setActivePanel(e.currentTarget.dataset.to);
+	};
 
 	return (
-		<Root activeView={activeView}>
-			<TestView id = 'test'/>
-			<MoreInfo id = 'moreInfo'/>
-		</Root>
+		<View activePanel={activePanel}>
+			<TestView id = 'test' go = { go }/>
+			<Edit id = 'edit' go = { go }/>
+		</View>
 	);
 }
 
