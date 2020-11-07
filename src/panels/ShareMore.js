@@ -44,6 +44,10 @@ const ShareMore = ({ id , go }) => (
               	value={'Тут нужно написать purpose'}
               	name="purpose"
             >
+				<option value="0">Курсовая работа</option>
+              <option value="1">Лабораторная работа</option>
+              <option value="2">Проектная работа</option>
+              <option value="3">Домашняя работа</option>
 			  </Select>
 			  </FormLayout>
 
