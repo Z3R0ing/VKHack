@@ -69,7 +69,6 @@ const Edit = ({ id , go }) => (
 		<FormLayout>
 			<Button mode="destructive">Destructive</Button>
 		</FormLayout>
-	  </span>
      <Div>
      </Div>
 	</Panel>
