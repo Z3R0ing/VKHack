@@ -22,10 +22,11 @@ const ShareMore = ({ id , go }) => (
 		<PanelHeader left={<PanelHeaderButton onClick={ go } data-to='test'>{'Назад'}</PanelHeaderButton>}>
 			Подробнее
 		</PanelHeader>
+		<Input placeholder="Название" />
 
-		<Group description="Дефолтный стиль аватарки. Используется для юзеров, групп.">
-       		<Header mode="secondary">Дефолтный тип</Header>
-        	<Cell before={<Avatar src={getAvatarUrl("https://sun4-15.userapi.com/impg/gKisXVJfnqW7cNq-8gBMtFo2Ky8any2hsm_NUw/D0lc-NsYlsI.jpg")} />}>Евгений Авсиевич</Cell>
+		<Group description="">
+       		<Header mode="secondary">Отправитель</Header>
+			   <Cell before={<Avatar src="https://sun9-23.userapi.com/JQQeEVgsP7GWA2E9IDmpaW6l3G8Vfkzbinbwmg/V0kmOnc6Lxs.jpg?ava=1" />}>Данька Лытин</Cell>
       	</Group>
 
 		<FormLayoutGroup top="Подробности">
@@ -42,7 +43,7 @@ const ShareMore = ({ id , go }) => (
 			  </Select>
 			  <Input placeholder="Сроки сдачи" />
 			  <FormLayout>
-        		<Textarea top="Заметки" placeholder="Группы, исполнители, продюссеры" />
+        		<Textarea top="Заметки" placeholder="" />
       		  </FormLayout>
 			  <Input placeholder="Преподаватель" />
         </FormLayoutGroup>
