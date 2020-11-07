@@ -7,11 +7,31 @@ import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 
 const TestView = ({ id, go }) => (
-<Panel id={ id }>
+    <Panel id={ id }>
 		<PanelHeader>Example</PanelHeader>
+        <Div>
+            <Button onClick={ go } data-to='mainView'>
+				Main View screen
+			</Button>
+        </Div>
         <Div>
             <Button onClick={ go } data-to='edit'>
 				Edit screen
+			</Button>
+        </Div>
+        <Div>
+            <Button onClick={ go } data-to='moreInfo'>
+				More info screen
+			</Button>
+        </Div>
+        <Div>
+            <Button onClick={ go } data-to='share'>
+                share screen
+			</Button>
+        </Div>
+        <Div>
+            <Button onClick={ go } data-to='shareMore'>
+                shareMore screen
 			</Button>
         </Div>
     </Panel>
