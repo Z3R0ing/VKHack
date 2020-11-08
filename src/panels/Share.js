@@ -13,7 +13,7 @@ import { Icon24MoreHorizontal } from '@vkontakte/icons';
 const Share = ({ id , go }) => (
 <View id={id} activePanel='sharePanel'>
 	<Panel id='sharePanel'>
-	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='mainView'/>}>
     <PanelHeaderContent>
       <Cell>Поделились</Cell>
     </PanelHeaderContent>

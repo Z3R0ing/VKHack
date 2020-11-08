@@ -26,7 +26,7 @@ const MainView = ({ id , go }) => {
 		return(
 			<View id={ id } activePanel = 'mainPanel'>
 	<Panel id='mainPanel'>
-			<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'/>}>
+			<PanelHeader>
 				<PanelHeaderContent>
       				<Cell>StudORG</Cell>
     			</PanelHeaderContent>

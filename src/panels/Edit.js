@@ -14,7 +14,7 @@ import{PanelHeaderBack, PanelHeaderContent, Cell} from '@vkontakte/vkui';
 const Edit = ({ id , go }) => (
 <View id={id} activePanel='viewPanel'>
 	<Panel id='viewPanel'>
-	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='mainView'/>}>
     <PanelHeaderContent>
       <Cell>Добавить</Cell>
     </PanelHeaderContent>

@@ -15,7 +15,7 @@ import Icon24Share from '@vkontakte/icons/dist/24/share';
 const MoreInfo = ({ id , go }) => (
 <View id={id} activePanel='infoPanel'>
 	<Panel id='infoPanel'>
-  <PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+  <PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='mainView'/>}>
     <PanelHeaderContent>
       <Cell>Программирование</Cell>
     </PanelHeaderContent>

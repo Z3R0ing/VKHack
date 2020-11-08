@@ -25,7 +25,7 @@ import Icon16Add from '@vkontakte/icons/dist/16/add';
 const ShareMore = ({ id , go }) => (
 <View id = {id} activePanel = 'shareInfo'>
 	<Panel id='shareInfo'>
-	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='share'/>}>
     <PanelHeaderContent>
       <Cell>Поделились</Cell>
     </PanelHeaderContent>
