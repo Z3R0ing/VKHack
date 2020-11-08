@@ -10,7 +10,7 @@ import Calendar from 'react-calendar';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Accordion} from 'react-bootstrap';
 import {Card, Header, PanelHeaderBack, Cell} from '@vkontakte/vkui';
-import { Icon16Add, Icon24Add, Icon28AddCircleFillBlue, Icon28KeyboardBotsOutline } from '@vkontakte/icons';
+import { Icon24MoreHorizontal, Icon16Add, Icon24Add, Icon28AddCircleFillBlue, Icon28KeyboardBotsOutline } from '@vkontakte/icons';
 import Icon28AddCircleOutline from '@vkontakte/icons/dist/28/add_circle_outline';
 import Icon24AddCircleDottedOutline from '@vkontakte/icons/dist/24/add_circle_dotted_outline';
 import Icon24NotificationOutline from '@vkontakte/icons/dist/24/notification_outline';
@@ -40,7 +40,7 @@ const MainView = ({ id , go }) => {
 			<Accordion defaultActiveKey="-1">
 			<Div>
   				<Card>
-    				<Accordion.Toggle as={Header} eventKey="0">Инженерная графика </Accordion.Toggle>
+    				<Accordion.Toggle as={Header} eventKey="0" aside={<Icon24MoreHorizontal/>}>Инженерная графика </Accordion.Toggle>
     				<Accordion.Collapse eventKey="0">
 						<FormLayout>
         					<Checkbox>Подзадача 1</Checkbox>
@@ -54,7 +54,7 @@ const MainView = ({ id , go }) => {
 				  </Div>
 			<Div>
 				  <Card>
-				  <Accordion.Toggle as={Header} eventKey="1">Программирование</Accordion.Toggle>
+				  <Accordion.Toggle as={Header} eventKey="1" aside={<Icon24MoreHorizontal/>}>Программирование</Accordion.Toggle>
     				<Accordion.Collapse eventKey="1">
 						<FormLayout>
         					<Checkbox>Подзадача 1</Checkbox>

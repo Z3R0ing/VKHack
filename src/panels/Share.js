@@ -7,6 +7,7 @@ import View from '@vkontakte/vkui/dist/components/View/View';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Accordion} from 'react-bootstrap';
 import{Card,Header, Cell, Checkbox, FormLayout, PanelHeaderBack, Div, CellButton} from '@vkontakte/vkui';
+import { Icon24MoreHorizontal } from '@vkontakte/icons';
 
 
 const Share = ({ id , go }) => (
@@ -20,7 +21,7 @@ const Share = ({ id , go }) => (
 		<Accordion defaultActiveKey="-1">
 			<Div>
   				<Card>
-    				<Accordion.Toggle as={Header} eventKey="0">Инженерная графика </Accordion.Toggle>
+    				<Accordion.Toggle as={Header} eventKey="0" aside={<Icon24MoreHorizontal/>}>Инженерная графика </Accordion.Toggle>
     				<Accordion.Collapse eventKey="0">
 						<FormLayout>
         					<Checkbox>Подзадача 1</Checkbox>
@@ -36,7 +37,7 @@ const Share = ({ id , go }) => (
 				  </Div>
 			<Div>
 				  <Card>
-				  <Accordion.Toggle as={Header} eventKey="1">Программирование</Accordion.Toggle>
+				  <Accordion.Toggle as={Header} eventKey="1" aside={<Icon24MoreHorizontal/>}>Программирование</Accordion.Toggle>
     				<Accordion.Collapse eventKey="1">
 						<FormLayout>
         					<Checkbox>Подзадача 1</Checkbox>
