@@ -14,7 +14,11 @@ import{PanelHeaderBack, PanelHeaderContent, Card} from '@vkontakte/vkui';
 const MoreInfo = ({ id , go }) => (
 <View id={id} activePanel='infoPanel'>
 	<Panel id='infoPanel'>
-  <PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}><PanelHeaderContent>Программирование</PanelHeaderContent></PanelHeader>
+  <PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+    <PanelHeaderContent>
+      <Cell>Программирование</Cell>
+    </PanelHeaderContent>
+  </PanelHeader>
     
       <Group>
         <Cell>
