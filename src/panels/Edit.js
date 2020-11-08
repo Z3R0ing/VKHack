@@ -65,8 +65,8 @@ const Edit = ({ id , go }) => (
 	  <FormLayout>
 			
 		<Div> 
-		<Button onClick={ go } data-to='mainView' mode="Применить">Commerce</Button>
-		<Button onClick={ go } data-to='mainView' mode="Отменить">Destructive</Button>
+		<Button onClick={ go } data-to='mainView' mode="Применить">Принять</Button>
+		<Button onClick={ go } data-to='mainView' mode="Отменить">Отменить</Button>
 
 		</Div>
 		</FormLayout>
