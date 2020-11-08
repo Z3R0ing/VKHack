@@ -6,7 +6,7 @@ import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton
 import View from '@vkontakte/vkui/dist/components/View/View';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Accordion} from 'react-bootstrap';
-import{Card,Header, Cell, Checkbox, FormLayout, PanelHeaderBack, Div} from '@vkontakte/vkui';
+import{Card,Header, Cell, Checkbox, FormLayout, PanelHeaderBack, Div, CellButton} from '@vkontakte/vkui';
 
 
 const Share = ({ id , go }) => (
@@ -25,7 +25,9 @@ const Share = ({ id , go }) => (
         					<Checkbox>Подзадача 3</Checkbox>
         					<Checkbox>Подзадача 4</Checkbox>
 							<Cell>Cрок: 18.11</Cell>
+							<CellButton onClick={ go} data-to='shareMore'>{'Подробнее'}</CellButton>
       					</FormLayout>
+						  
     				</Accordion.Collapse>
   				</Card>
 				  </Div>
@@ -39,6 +41,7 @@ const Share = ({ id , go }) => (
         					<Checkbox>Подзадача 3</Checkbox>
         					<Checkbox>Подзадача 4</Checkbox>
 							<Cell>Cрок: 18.11</Cell>
+							<CellButton onClick={ go} data-to='shareMore'>{'Подробнее'}</CellButton>
       					</FormLayout>
     				</Accordion.Collapse>
   				</Card>

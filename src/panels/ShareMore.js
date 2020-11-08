@@ -26,7 +26,7 @@ const ShareMore = ({ id , go }) => (
 	<Panel id='shareInfo'>
 		<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}></PanelHeader>
 		<h2 style={{textAlignVertical: "center",textAlign: "center"}}>Подробнее</h2>	
-		<FormLayout><Input top="Название" placeholder="" /></FormLayout>
+		<FormLayout><Input top="Название" placeholder="Инженерная графика" /></FormLayout>
 		
 
 		<Group description="">
@@ -39,7 +39,7 @@ const ShareMore = ({ id , go }) => (
 				<Select
 			
               	top="Тип задания"
-              	placeholder="Выберите тип задания"
+              	placeholder="Курсовая работа"
               	status={'Тут нужно написать purpose' ? 'valid' : 'error'}
               	bottom={'Тут нужно написать purpose' ? '' : 'Пожалуйста, укажите тип задания'}
               
@@ -54,14 +54,14 @@ const ShareMore = ({ id , go }) => (
 			  </FormLayout>
 
 			  <FormLayout>
-			  <Input top="Сроки сдачи" placeholder="" />	  
+			  <Input top="Сроки сдачи" placeholder="18.11" />	  
 			  </FormLayout>
 
 			  <FormLayout>
-				  <Input top="Преподаватель"placeholder="" />
+				  <Input top="Преподаватель"placeholder="Григорьев С.В." />
 			  </FormLayout>
 			  <FormLayout>
-			  	<Textarea top="Заметки" placeholder="" />
+			  	<Textarea top="Заметки" placeholder="Тема курсовой:" />
 			  </FormLayout>
 
 			  <FormLayout>
