@@ -16,7 +16,7 @@ const Edit = ({ id , go }) => (
 	<Panel id='viewPanel'>
 	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
     <PanelHeaderContent>
-      <Cell>Изменить</Cell>
+      <Cell>Добавить</Cell>
     </PanelHeaderContent>
   </PanelHeader>	
         <FormLayoutGroup top="Экран редактирования">

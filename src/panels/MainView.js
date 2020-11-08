@@ -31,8 +31,8 @@ const MainView = ({ id , go }) => {
     			</PanelHeaderContent>
 			</PanelHeader>
 			<Div style={{display: 'flex'}}>
-				<Button before={<Icon24AddCircleDottedOutline/>} stretched style={{ marginRight: 8 }}>Добавить</Button>
-				<Button before={<Icon24NotificationOutline/>} stretched mode="secondary">Входящие</Button>
+				<Button onClick={ go } data-to='edit' before={<Icon24AddCircleDottedOutline/>} stretched style={{ marginRight: 8 }}>Добавить</Button>
+				<Button onClick={ go } data-to='share'before={<Icon24NotificationOutline/>} stretched mode="secondary">Входящие</Button>
 			</Div>
 			<Div>
 				<Calendar onChange={onChange} value={date} />
