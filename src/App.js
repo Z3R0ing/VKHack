@@ -10,7 +10,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import { Root } from '@vkontakte/vkui';
 
 const App = () => {
-	const [activeView, setActiveView] = useState('test');
+	const [activeView, setActiveView] = useState('mainView');
 
 	const go = e => {
 		setActiveView(e.currentTarget.dataset.to);
