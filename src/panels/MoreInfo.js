@@ -4,12 +4,12 @@ import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import InfoRow from '@vkontakte/vkui/dist/components/InfoRow/InfoRow';
-import { Cell } from '@vkontakte/vkui';
+import { Button, Cell, Div } from '@vkontakte/vkui';
 import { FormLayout } from '@vkontakte/vkui';
 import { Checkbox } from '@vkontakte/vkui';
 import { View } from '@vkontakte/vkui';
 import{PanelHeaderBack, PanelHeaderContent, Card} from '@vkontakte/vkui';
-
+import Icon24Attach from '@vkontakte/icons/dist/24/attach';
 
 const MoreInfo = ({ id , go }) => (
 <View id={id} activePanel='infoPanel'>
@@ -53,7 +53,9 @@ const MoreInfo = ({ id , go }) => (
         </Cell>
         <Cell multiline>
           <InfoRow header="Прикреплённые файлы">
-            ХЗ ЧО ТУТ ДЕЛАТЬ
+          <Div style={{display: 'flex'}}>
+				    <Button onClick={ go } data-to='edit' before={<Icon24Attach/>} stretched style={{ marginRight: 8 }}>Добавить</Button>
+			    </Div>
           </InfoRow>
         </Cell>
         <Cell>
