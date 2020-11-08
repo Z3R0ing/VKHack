@@ -10,6 +10,7 @@ import { Checkbox } from '@vkontakte/vkui';
 import { View } from '@vkontakte/vkui';
 import{PanelHeaderBack, PanelHeaderContent, Card} from '@vkontakte/vkui';
 import Icon24Attach from '@vkontakte/icons/dist/24/attach';
+import Icon24Share from '@vkontakte/icons/dist/24/share';
 
 const MoreInfo = ({ id , go }) => (
 <View id={id} activePanel='infoPanel'>
@@ -64,6 +65,7 @@ const MoreInfo = ({ id , go }) => (
           </InfoRow>
         </Cell>
       </Group>
+      <Div><Button before={<Icon24Share/>}>Поделиться</Button></Div>
 	</Panel>
 </View>
 );

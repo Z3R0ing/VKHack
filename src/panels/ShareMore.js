@@ -11,7 +11,7 @@ import Icon24Camera from '@vkontakte/icons/dist/24/camera';
 import Icon24Document from '@vkontakte/icons/dist/24/document';
 import {Group} from '@vkontakte/vkui';
 import { Header } from '@vkontakte/vkui';
-import { Cell } from '@vkontakte/vkui';
+import { Cell, Button, Div } from '@vkontakte/vkui';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import { getAvatarUrl } from '@vkontakte/vk-bridge';
 import {Select} from '@vkontakte/vkui';
@@ -19,6 +19,7 @@ import {Textarea} from '@vkontakte/vkui';
 import {View} from '@vkontakte/vkui';
 import {Icon24Back} from '@vkontakte/icons/dist/24/back'
 import{PanelHeaderBack, PanelHeaderContent} from '@vkontakte/vkui';
+import Icon16Add from '@vkontakte/icons/dist/16/add';
 
 
 const ShareMore = ({ id , go }) => (
@@ -71,6 +72,7 @@ const ShareMore = ({ id , go }) => (
 			  <File top="Прикреплённые документы" before={<Icon24Document />} controlSize="xl" mode="secondary" />
 			  </FormLayout>
         </FormLayoutGroup>
+		<Div><Button before={<Icon16Add/>} onClick={ go } data-to='share'>Добавить себе</Button></Div>
 	</Panel>
 </View>
 );
