@@ -54,7 +54,7 @@ const MoreInfo = ({ id , go }) => (
         <Cell multiline>
           <InfoRow header="Прикреплённые файлы">
           <Div style={{display: 'flex'}}>
-				    <Button onClick={ go } data-to='edit' before={<Icon24Attach/>} stretched style={{ marginRight: 8 }}>Добавить</Button>
+				    <Button before={<Icon24Attach/>} stretched style={{ marginRight: 8 }}>Добавить</Button>
 			    </Div>
           </InfoRow>
         </Cell>
