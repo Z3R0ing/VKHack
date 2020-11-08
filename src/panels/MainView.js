@@ -14,6 +14,7 @@ import { Icon24MoreHorizontal, Icon16Add, Icon24Add, Icon28AddCircleFillBlue, Ic
 import Icon28AddCircleOutline from '@vkontakte/icons/dist/28/add_circle_outline';
 import Icon24AddCircleDottedOutline from '@vkontakte/icons/dist/24/add_circle_dotted_outline';
 import Icon24NotificationOutline from '@vkontakte/icons/dist/24/notification_outline';
+import{CellButton} from '@vkontakte/vkui';
 const MainView = ({ id , go }) => {
 
 		const [date, setDate] = useState(new Date());
@@ -48,6 +49,7 @@ const MainView = ({ id , go }) => {
         					<Checkbox>Подзадача 3</Checkbox>
         					<Checkbox>Подзадача 4</Checkbox>
 							<Cell>Cрок: 18.11</Cell>
+							<CellButton onClick={ go} data-to='moreInfo'>{'Подробнее'}</CellButton>
       					</FormLayout>
     				</Accordion.Collapse>
   				</Card>
@@ -62,6 +64,7 @@ const MainView = ({ id , go }) => {
         					<Checkbox>Подзадача 3</Checkbox>
         					<Checkbox>Подзадача 4</Checkbox>
 							<Cell>Cрок: 18.11</Cell>
+							<CellButton onClick={ go} data-to='moreInfo'>{'Подробнее'}</CellButton>
       					</FormLayout>
     				</Accordion.Collapse>
   				</Card>
