@@ -24,9 +24,8 @@ import{PanelHeaderBack} from '@vkontakte/vkui';
 const ShareMore = ({ id , go }) => (
 <View id = {id} activePanel = 'shareInfo'>
 	<Panel id='shareInfo'>
-		<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}>
-			Подробнее
-		</PanelHeader>
+		<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}></PanelHeader>
+		<h2 style={{textAlignVertical: "center",textAlign: "center"}}>Подробнее</h2>	
 		<FormLayout><Input top="Название" placeholder="" /></FormLayout>
 		
 

@@ -15,9 +15,8 @@ import{PanelHeaderBack} from '@vkontakte/vkui';
 const MoreInfo = ({ id , go }) => (
 <View id={id} activePanel='infoPanel'>
 	<Panel id='infoPanel'>
-  <PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}>
-			Программирование
-		</PanelHeader>
+  <PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}></PanelHeader>
+    <h2 style={{textAlignVertical: "center",textAlign: "center"}}>Программирование</h2>	
       <Group>
         <Cell>
           <InfoRow header="Тип задания">

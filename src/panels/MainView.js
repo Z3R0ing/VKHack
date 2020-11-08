@@ -22,9 +22,10 @@ const MainView = ({ id , go }) => {
 		return(
 			<View id={ id } activePanel = 'mainPanel'>
 	<Panel id='mainPanel'>
-			<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'/>}>
-				StudORG
-			</PanelHeader>
+			<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'/>}></PanelHeader>
+			<Div>
+				<h2 style={{textAlignVertical: "center",textAlign: "center"}}>StudORG</h2>	
+			</Div>
 			<Div>
 			<Calendar onChange={onChange} value={date} />
 			</Div>

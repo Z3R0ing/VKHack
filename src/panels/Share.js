@@ -9,9 +9,9 @@ import{PanelHeaderBack} from '@vkontakte/vkui';
 const Share = ({ id , go }) => (
 <View id={id} activePanel='sharePanel'>
 	<Panel id='sharePanel'>
-	<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}>
-			Поделились
-		</PanelHeader>
+	<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}></PanelHeader>
+		<h2 style={{textAlignVertical: "center",textAlign: "center"}}>Поделились</h2>	
+		
 	</Panel>
 </View>
 );

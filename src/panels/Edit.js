@@ -10,16 +10,13 @@ import { Select } from '@vkontakte/vkui';
 import { Icon24Document } from '@vkontakte/icons';
 import View from '@vkontakte/vkui/dist/components/View/View';
 import{PanelHeaderBack} from '@vkontakte/vkui';
-
-
-
   
 const Edit = ({ id , go }) => (
 <View id={id} activePanel='viewPanel'>
 	<Panel id='viewPanel'>
 	<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}>
-			Edit Frame
 		</PanelHeader>
+		<h2 style={{textAlignVertical: "center",textAlign: "center"}}>Редактирование и добавление</h2>	
         <FormLayoutGroup top="Экран редактирования">
               <Input placeholder="Название" />
 			  <Select
