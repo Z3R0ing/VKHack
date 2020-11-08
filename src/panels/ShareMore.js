@@ -18,14 +18,17 @@ import {Select} from '@vkontakte/vkui';
 import {Textarea} from '@vkontakte/vkui';
 import {View} from '@vkontakte/vkui';
 import {Icon24Back} from '@vkontakte/icons/dist/24/back'
-import{PanelHeaderBack} from '@vkontakte/vkui';
+import{PanelHeaderBack, PanelHeaderContent} from '@vkontakte/vkui';
 
 
 const ShareMore = ({ id , go }) => (
 <View id = {id} activePanel = 'shareInfo'>
 	<Panel id='shareInfo'>
-		<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}></PanelHeader>
-		<h2 style={{textAlignVertical: "center",textAlign: "center"}}>Подробнее</h2>	
+	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+    <PanelHeaderContent>
+      <Cell>Поделились</Cell>
+    </PanelHeaderContent>
+  </PanelHeader>
 		<FormLayout><Input top="Название" placeholder="Инженерная графика" /></FormLayout>
 		
 

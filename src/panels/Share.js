@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
-import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
+import PanelHeaderContent from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
 import View from '@vkontakte/vkui/dist/components/View/View';
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Accordion} from 'react-bootstrap';
@@ -12,8 +12,11 @@ import{Card,Header, Cell, Checkbox, FormLayout, PanelHeaderBack, Div, CellButton
 const Share = ({ id , go }) => (
 <View id={id} activePanel='sharePanel'>
 	<Panel id='sharePanel'>
-	<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}></PanelHeader>
-		<h2 style={{textAlignVertical: "center",textAlign: "center"}}>Поделились</h2>	
+	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+    <PanelHeaderContent>
+      <Cell>Поделились</Cell>
+    </PanelHeaderContent>
+  </PanelHeader>	
 		<Accordion defaultActiveKey="-1">
 			<Div>
   				<Card>

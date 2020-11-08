@@ -9,14 +9,16 @@ import { Button, Card, CardGrid, Checkbox, Div, File, FormLayout, Group, Header,
 import { Select } from '@vkontakte/vkui';
 import { Icon24Document } from '@vkontakte/icons';
 import View from '@vkontakte/vkui/dist/components/View/View';
-import{PanelHeaderBack} from '@vkontakte/vkui';
+import{PanelHeaderBack, PanelHeaderContent, Cell} from '@vkontakte/vkui';
   
 const Edit = ({ id , go }) => (
 <View id={id} activePanel='viewPanel'>
 	<Panel id='viewPanel'>
-	<PanelHeader left={<PanelHeaderBack onClick={ go } data-to='test'>{'Назад'}</PanelHeaderBack>}>
-		</PanelHeader>
-		<h2 style={{textAlignVertical: "center",textAlign: "center"}}>Редактирование и добавление</h2>	
+	<PanelHeader left = {<PanelHeaderBack onClick={ go } data-to='test'/>}>
+    <PanelHeaderContent>
+      <Cell>Изменить</Cell>
+    </PanelHeaderContent>
+  </PanelHeader>	
         <FormLayoutGroup top="Экран редактирования">
               <Input placeholder="Название" />
 			  <Select
